@@ -4,8 +4,11 @@ on:
   push:
     branches:
       - AWS_LAB
+    paths-ignore:
+      - 'docs/**'
+      - 'README.md'
 
-  workflow_dispatch:
+  # workflow_dispatch:
 
 jobs:
   job-1:

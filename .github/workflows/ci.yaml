@@ -12,3 +12,5 @@ jobs:
     steps:
       - name: Hello GitHub Actions
         run: echo "MedTrack GitHub Actions Started"
+        
+workflow_dispatch:

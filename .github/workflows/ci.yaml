@@ -1,0 +1,12 @@
+name: MedTrack CI
+
+on:
+  push:
+
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello GitHub Actions
+        run: echo "MedTrack GitHub Actions Started"

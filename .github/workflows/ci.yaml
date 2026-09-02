@@ -2,6 +2,8 @@ name: MedTrack CI
 
 on:
   push:
+    branches:
+      - AWS_LAb
 
 jobs:
   job-1:

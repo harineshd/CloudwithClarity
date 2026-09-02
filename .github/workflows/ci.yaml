@@ -13,9 +13,26 @@ on:
   # workflow_dispatch:
 
 jobs:
-  job-1:
+
+  frontend-build:
+
+    name: Frontend Build
+
     runs-on: ubuntu-latest
 
     steps:
-      - name: Hello GitHub Actions
-        run: echo "MedTrack GitHub Actions Started"
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Frontend
+        run: npm run build
+        working-directory: frontend

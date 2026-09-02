@@ -1,4 +1,4 @@
-# MedTrack Application Githubactions
+# MedTrack Application Githubactions practical
 
 A real 3-tier clinic appointment system, built to be run locally first and then deployed onto the
 AWS lab architecture (VPC → EC2 → AMI → Launch Template → ALB → ASG → CloudWatch → Route 53).
